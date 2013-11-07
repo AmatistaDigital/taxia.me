@@ -290,7 +290,7 @@ module.exports = function (grunt) {
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= yeoman.app %>',
+                    cwd: '.tmp',
                     src: '*.html',
                     dest: '<%= yeoman.dist %>'
                 }]
@@ -316,6 +316,7 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
                         'styles/fonts/{,*/}*.*',
+                        '!**/bower_components/**'
                     ]
                 }]
             },
@@ -331,7 +332,7 @@ module.exports = function (grunt) {
                 dot: true,
                 cwd: '.tmp/',
                 dest: 'dist',
-                src: '**/*'
+                src: 'index.html'
             }
         },
         concurrent: {
@@ -353,8 +354,7 @@ module.exports = function (grunt) {
                 'copy:styles',
                 'imagemin',
                 'svgmin',
-                'copy:jade',
-                'htmlmin'
+                'htmlmin',
             ]
         },
 
@@ -399,8 +399,8 @@ module.exports = function (grunt) {
         'uglify',
         'copy:dist',
         // 'rev',
-        'copy:jade',
-        'usemin'
+        'usemin',
+        'copy:jade'
     ]);
 
     grunt.registerTask('deploy', [ 'build', 'gh-pages' ]);
