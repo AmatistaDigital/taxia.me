@@ -1,41 +1,32 @@
-// // Reset default button.
-// .btn {
-//   @extend %background-asphalt;
-//   @extend %padding-small;
-//   @extend %text-medium;
-//   @extend %text-white;
+// Reset default button.
+.btn {
+  @extend %background-asphalt;
+  @extend %padding-small;
+  @extend %text-white;
 
-//   @include inline-block;
-//   @include box-sizing(border-box);
+  @include inline-block;
+  @include border-radius(5px);
+  @include box-sizing(border-box);
 
-//   border        : none;
-//   border-bottom : 3px solid black;
-//   font-weight   : bold;
+  border : none;
 
-//   &:hover:not(.btn-disabled) {
-//     border-width : 5px;
-//     padding-top  : getSpace(small) - 2px;
-//   }
+  // Button sizes.
+  &.btn-big {
+    width : 100%;
+  }
 
-//   // Button sizes.
-//   &.btn-big {
-//     width : 100%;
-//   }
+  // Button states.
+  &.btn-disabled {
+    @include opacity(0.7);
+    cursor : default;
+  }
 
-//   // Button states.
-//   &.btn-disabled {
-//     @include opacity(0.7);
-//     cursor : default;
-//   }
+  // Button colors.
+  &.btn-danger {
+    @extend %background-blood;
+  }
 
-//   // Button colors.
-//   &.btn-danger {
-//     @extend %background-alizarin;
-//     border-color : getColor(pomegranate);
-//   }
-
-//   &.btn-success {
-//     @extend %background-emerald;
-//     border-color : getColor(nephritis);
-//   }
-// }
+  &.btn-info {
+    @extend %background-water;
+  }
+}

@@ -1,0 +1,66 @@
+.features {
+  @extend %text-center;
+
+  .chofer-info {
+    @extend %background-sky;
+    @extend %padding-small;
+
+    @include border-radius(10px);
+    @include inline-block;
+
+    border         : 3px solid getColor(water);
+    margin-top     : -30px;
+
+    .btn {
+      @extend %margin-left-small;
+      vertical-align : baseline;
+    }
+  }
+
+  .features-list {
+    @extend %margin-vertical-huge;
+    @extend %text-asphalt;
+    overflow : hidden;
+
+    .feature {
+      @extend %padding-lateral-huge;
+
+      @include inline-block;
+
+      height         : 100%;
+      margin-bottom  : -2000px;
+      padding-bottom : 2000px;
+      vertical-align : top;
+      width          : 140px;
+
+      &:not(:last-child) {
+        border-right : 1px solid getColor(clouds);
+      }
+
+      &:hover .feature-logo {
+        @include transition;
+        @include transform(rotateY(-360deg));
+      }
+
+      .feature-logo {
+        @extend %circle;
+        @extend %margin-bottom-medium;
+
+
+        background-image : inline-image("backgrounds/feature.png");
+        height : 140px;
+        width  : 140px;
+
+        img {
+          height     : 86px;
+          margin-top : (140px - 86px) / 2;
+          width      : 86px;
+        }
+      }
+
+      h3 {
+        @extend %text-blood;
+      }
+    }
+  }
+}
