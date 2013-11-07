@@ -27,6 +27,7 @@
 // ------------------
 // Default style for HTML elements with no classes.
 @import "quarks/base";
+@import "quarks/forms";
 @import "quarks/headings";
 @import "quarks/links";
 @import "quarks/paragraphs";
@@ -44,4 +45,5 @@
 // Unique elements across the page, they can combine atoms and quarks.
 @import "molecules/intro";
 @import "molecules/features";
+@import "molecules/register";
 // [End molecules]

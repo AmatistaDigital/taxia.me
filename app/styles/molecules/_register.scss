@@ -1,0 +1,25 @@
+.register {
+  @extend %background-blood;
+  @extend %padding-large;
+  @extend %text-center;
+
+  h1 {
+    span {
+      @include inline-block;
+    }
+
+    img {
+      height         : 60px;
+      vertical-align : middle;
+    }
+  }
+
+  p {
+    @extend %margin-xx-large;
+  }
+
+  .btn {
+    font-weight    : bold;
+    text-transform : uppercase;
+  }
+}

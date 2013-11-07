@@ -1,14 +1,17 @@
 // Reset default button.
 .btn {
   @extend %background-asphalt;
-  @extend %padding-small;
+  @extend %padding-lateral-large;
+  @extend %padding-vertical-small;
   @extend %text-white;
 
   @include inline-block;
   @include border-radius(5px);
   @include box-sizing(border-box);
+  @include transition(all 0.3s ease);
 
   border : none;
+  cursor : pointer;
 
   // Button sizes.
   &.btn-big {
@@ -23,10 +26,18 @@
 
   // Button colors.
   &.btn-danger {
-    @extend %background-blood;
+    @extend %background-pink;
+
+    &:hover {
+      background-color : darken(getColor(pink), 3%);
+    }
   }
 
   &.btn-info {
     @extend %background-water;
+
+    &:hover {
+      background-color : darken(getColor(water), 3%);
+    }
   }
 }
