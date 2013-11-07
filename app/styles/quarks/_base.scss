@@ -1,0 +1,7 @@
+body {
+  @extend %background-asphalt;
+  @extend %text-white;
+  @extend %text-medium;
+
+  font-family : $primary-font;
+}

@@ -1,0 +1,9 @@
+@import "compass/css3/font-face";
+
+@include font-face(Lato,
+  font-files(
+    "lato-reg-webfont.woff",
+    "lato-reg-webfont.otf",
+    "lato-reg-webfont.svg#lato-reg-webfont"
+  )
+);

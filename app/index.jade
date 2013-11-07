@@ -1,0 +1,29 @@
+doctype 5
+html(lang='en')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+    title Taxia.me
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='shortcut-icon', href='/images/favicon.png', type='image/x-icon')
+    link(rel='icon', href='/images/favicon.png', type='image/x-icon')
+
+    // build:css styles/screen.min.css
+    link(rel='stylesheet', href='styles/screen.css')
+    // endbuild
+
+  body
+
+    //- Sections.
+    include partials/intro
+
+    // build:js scripts/app.min.js
+    script(src='/bower_components/jquery/jquery.min.js')
+    script(src='/bower_components/parallax/source/jquery.parallax.js')
+    script(src='scripts/app.js')
+    // endbuild
+
+    //- Place Google Analytics code gere.
