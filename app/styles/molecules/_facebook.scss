@@ -1,0 +1,54 @@
+.facebook {
+  @include background-size(100% 100%);
+  background : url(../images/backgrounds/night.jpg) no-repeat center center fixed;
+
+  .container {
+    position   : relative;
+  }
+
+  .facebook-text {
+    @include float(left);
+    margin-bottom : 150px;
+    margin-top    : 100px;
+    width         : 510px;
+
+    h1 {
+      font-size : 3.5em;
+    }
+
+    p {
+      @extend %margin-vertical-xx-large;
+      font-weight : bold;
+    }
+
+    .btn-facebook {
+      @extend %padding-lateral-large;
+      @extend %padding-vertical-xx-small;
+
+      &:hover + .facebook-link {
+        @include opacity(1);
+      }
+
+      img, span {
+        @include inline-block;
+        vertical-align : middle;
+      }
+
+      img {
+        @extend %margin-right-medium;
+      }
+    }
+
+    .facebook-link {
+      @extend %margin-left-medium;
+      @include opacity(0);
+      @include transition(all 0.5s ease);
+    }
+  }
+
+  .nexus {
+    position : absolute;
+    right    : 0;
+    top      : -50px;
+  }
+}

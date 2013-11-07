@@ -1,8 +1,7 @@
 .intro {
-  background-size: cover;
-  background : url(../images/backgrounds/road.jpg) no-repeat center center fixed;
-  overflow   : hidden;
-  width      : 100%;
+  background-size : cover;
+  background      : url(../images/backgrounds/road.jpg) no-repeat center center fixed;
+  overflow        : hidden;
 
   .intro-hand {
     @include float(left);

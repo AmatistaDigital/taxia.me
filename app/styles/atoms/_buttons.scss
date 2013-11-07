@@ -40,4 +40,12 @@
       background-color : darken(getColor(water), 3%);
     }
   }
+
+  &.btn-facebook {
+    @extend %background-facebook;
+
+    &:hover {
+      background-color : darken(getColor(facebook), 3%);
+    }
+  }
 }

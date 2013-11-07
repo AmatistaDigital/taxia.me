@@ -1,6 +1,7 @@
 .register {
   @extend %background-blood;
-  @extend %padding-large;
+  @extend %padding-bottom-huge;
+  @extend %padding-top-large;
   @extend %text-center;
 
   h1 {
