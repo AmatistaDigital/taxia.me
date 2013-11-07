@@ -1,6 +1,6 @@
 .intro {
   background-size: cover;
-  background : url(/images/backgrounds/road.jpg) no-repeat center center fixed;
+  background : url(../images/backgrounds/road.jpg) no-repeat center center fixed;
   overflow   : hidden;
   width      : 100%;
 
@@ -35,7 +35,7 @@
 
       @include box-sizing(border-box);
 
-      background-image : url(/images/backgrounds/ribbon.png);
+      background-image : url(../images/backgrounds/ribbon.png);
       margin           : 0 auto;
       height           : 29px;
       width            : 309px;
