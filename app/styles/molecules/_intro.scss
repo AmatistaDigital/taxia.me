@@ -26,8 +26,16 @@
     .store-btns {
       @extend %margin-vertical-huge;
 
+      &:hover ~ .coming-soon {
+        @include opacity(1);
+      }
+
       a {
-        @include opacity(.7);
+        @include transition;
+
+          &:hover {
+            @include opacity(.2);
+          }
       }
     }
 
@@ -37,6 +45,8 @@
       @extend %text-small;
 
       @include box-sizing(border-box);
+      @include opacity(0);
+      @include transition;
 
       background-image : url(../images/backgrounds/ribbon.png);
       margin           : 0 auto;
