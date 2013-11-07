@@ -47,8 +47,14 @@
   }
 
   .nexus {
+    @include transition(all 0.75s ease);
+
     position : absolute;
-    right    : 0;
+    right    : -100%;
     top      : -50px;
+
+    &.appear {
+      right : 0px;
+    }
   }
 }
