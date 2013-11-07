@@ -25,6 +25,10 @@
 
     .store-btns {
       @extend %margin-vertical-huge;
+
+      a {
+        @include opacity(.7);
+      }
     }
 
     .coming-soon {
