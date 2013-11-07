@@ -1,0 +1,19 @@
+.footer {
+  @extend %background-clouds;
+  @extend %padding-bottom-large;
+  @extend %text-asphalt;
+  @extend %text-center;
+  @extend %text-x-small;
+
+  padding-top : 100px;
+
+  a {
+    color           : inherit;
+    font-weight     : bold;
+    text-decoration : underline;
+
+    &:hover {
+      text-decoration : none;
+    }
+  }
+}
