@@ -11,4 +11,5 @@
 
 ### TODO:
 - Optimizar imagenes, crear sprites, encodear en base64.
+- Agregar tipografía __Aller__ con `@font-face`.
 - Hacer el sitio responsive.
