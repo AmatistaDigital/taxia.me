@@ -1,9 +1,19 @@
 @import "compass/css3/font-face";
 
-@include font-face(Lato,
+@include font-face("Aller",
   font-files(
-    "lato-reg-webfont.woff",
-    "lato-reg-webfont.otf",
-    "lato-reg-webfont.svg#lato-reg-webfont"
-  )
+    "aller_rg-webfont.ttf",
+    "aller_rg-webfont.woff",
+    "aller_rg-webfont.svg#aller_rg-webfont"
+  ),
+  "aller_rg-webfont.eot", normal
+);
+
+@include font-face("Aller",
+  font-files(
+    "aller_bd-webfont.ttf",
+    "aller_bd-webfont.woff",
+    "aller_bd-webfont.svg#aller_bd-webfont"
+  ),
+  "aller_bd-webfont.eot", bold
 );
